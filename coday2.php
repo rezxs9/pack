@@ -70,7 +70,7 @@ $curl = new curl();
 $curl->ssl(0, 2);	
 $i=0;
 while (true) {	
-$tod ='83'.x(8).'46';
+$tod ='83'.x(9).'46';
 $page = $curl->get('http://egift.id/u/'.$tod.'');
 	if (stripos($page, 'h1 style="top: 0;">')) {
 				preg_match_all('/<span id="p_item_name">(.*?)<\/span>/', $page, $nom);
